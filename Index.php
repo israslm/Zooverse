@@ -13,7 +13,21 @@
 
     <nav class="navbar1">
         <div class="container-fluid">
-            <img src="img\PhotoZoo/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top">
+        <?php 
+            $h = date("H");
+            if($h>6 && $h<=10){
+                echo ' <img src="img/logo1.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
+            }
+            if($h>10 && $h<=14){
+                echo ' <img src="img/logo2.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
+            }
+            if($h>14 && $h<=18){
+                echo ' <img src="img/logo3.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
+            }
+            else{
+                echo ' <img src="img/logo4.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
+            }
+        ?>
             <h3>Zooverse</h3>
         </div>
         <div>

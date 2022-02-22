@@ -2,6 +2,14 @@
     box-sizing: border-box;
   }
 
+  .top-image {
+    text-align: center;
+  }
+
+  .container-fluid {
+    text-align: left;
+  }
+  
   .menu {
     padding: 0%;
     display: flex;
@@ -87,3 +95,4 @@
   .content:hover{
     transform: scale(1.2);
   }
+

@@ -2,6 +2,10 @@
 
 $_SESSION["login"] = null;
 
+$input = [$_POST["txtEmail"],$_POST["txtPass"],date(DATE_RFC822)];
+
+file_put_contents('exemple.json', json_encode($input));
+
 if (isset($_POST["txtEmail"])) {
     echo $_POST["txtEmail"];
     echo "<br/>";

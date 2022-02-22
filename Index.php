@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Zooverse</title>
-    <link href="Index.css" rel="stylesheet" type="text/css">
+    <link href="css/Index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
 
     <nav class="navbar1">
         <div class="container-fluid">
-            <img src="PhotoZoo/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top">
+            <img src="img\PhotoZoo/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top">
             <h3>Zooverse</h3>
         </div>
         <div>
@@ -39,7 +39,7 @@
         <div class="row">
             <div class="column">
               <div class="content">
-                <img src="PhotoZoo\Sections\alligator.jpg" alt="alligator" width="100%">
+                <img src="img\PhotoZoo\Sections\alligator.jpg" alt="alligator" width="100%">
                 <h3>Australia’s scariest animal</h3>
                 <p>Don’t miss all of the jaw-snapping alligators action here at Zooverse. Our amazing alligators can be spotted soaking up the Sun’s rays and meeting our guests. </p>
                 <ul class="plus">
@@ -51,7 +51,7 @@
             </div>
             <div class="column">
               <div class="content">
-                <img src="PhotoZoo\Sections\koala.jpg" alt="koala" width="100%">
+                <img src="img\PhotoZoo\Sections\koala.jpg" alt="koala" width="100%">
                 <h3>Australia’s most famous animal</h3>
                 <p>Get ready for a cuteness overload here at Australia Zoo!  Keep your eyes peeled for our Wandering Wildlife Team for your chance to get up close with our adorable koalas.</p>
                 <ul class="plus">
@@ -63,7 +63,7 @@
             </div>
             <div class="column">
               <div class="content">
-                <img src="PhotoZoo\Sections\birds.jpg" alt="birds" width="100%">
+                <img src="img\PhotoZoo\Sections\birds.jpg" alt="birds" width="100%">
                 <h3>Fly with birds</h3>
                 <p>.....</p>
                 <ul class="plus">
@@ -75,7 +75,7 @@
             </div>
             <div class="column">
               <div class="content">
-                <img src="PhotoZoo\Sections\devil.jpg" alt="devil" width="100%">
+                <img src="img\PhotoZoo\Sections\devil.jpg" alt="devil" width="100%">
                 <h3>Cartoons' animals</h3>
                 <p>.....</p>
                 <ul class="plus">

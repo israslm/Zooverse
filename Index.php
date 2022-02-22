@@ -32,8 +32,6 @@
             <li><a href="http://localhost/wordpress/tickets/">Tickets</a></li>
             <li><a href="http://localhost/wordpress/food-drinks/">Food & Drinks</a></li>
             <li><a href="http://localhost/wordpress/goodies/">Goodies</a></li>
-            <li><a href="incident_tickets.html">Incidents</a></li>
-            <li><a href="authentification.html">Authentification</a></li>
           </ul>
         </div>
       </nav>

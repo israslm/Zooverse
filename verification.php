@@ -2,12 +2,12 @@
 
 $_SESSION["login"] = null;
 
-$input = [$_POST["txtEmail"],$_POST["txtPass"],date(DATE_RFC822)];
+$input = [$_POST["email"],$_POST["password"],date("Y-m-d H:i:s")];
 
 file_put_contents('exemple.json', json_encode($input));
 
-if (isset($_POST["txtEmail"])) {
-    echo $_POST["txtEmail"];
+if (isset($_POST["email"])) {
+    echo $_POST["email"];
     echo "<br/>";
 }
 
@@ -16,7 +16,7 @@ $utilisateurs =["Lina@gmail.com","passeLina","Edgar@gmail.com","passeEdgar"];
 $i = 0;
 
 while ($i<=sizeof($utilisateurs)-2){
-    if ($utilisateurs[$i]==$_POST["txtEmail"] && $utilisateurs[$i+1]==$_POST["txtPass"]) {
+    if ($utilisateurs[$i]==$_POST["email"] && $utilisateurs[$i+1]==$_POST["password"]) {
         $_SESSION["login"]=$utilisateurs[$i];
         echo "connecté : ";
         echo $_SESSION["login"];

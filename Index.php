@@ -11,17 +11,14 @@
       <div class="top-image">
         <?php 
           $h = date("H");
-          if($h>6 && $h<=10){
-              echo ' <img src="img/logo1.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
+          if($h>5 && $h<=12){
+              echo ' <img src="img/PhotoZoo/zebre.jpg" alt="zebra" width="100em" /> ';
           }
-          if($h>10 && $h<=14){
-              echo ' <img src="img/logo2.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
+          if($h>12 && $h<=21){
+              echo ' <img src="img/PhotoZoo/giraffe.jpg" alt="giraffe" width="100em" /> ';
           }
-          if($h>14 && $h<=18){
-              echo ' <img src="img/logo3.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
-          }
-          else{
-              echo ' <img src="img/logo4.jpg" alt="" width="45" height="44" class="d-inline-block align-text-top /> ';
+          if($h>21 && $h<=5){
+              echo ' <img src="img/PhotoZoo/panda.jpg" alt="panda" width="100em" /> ';
           }
         ?>
       </div>
@@ -30,7 +27,6 @@
     <nav class="navbar1">
         <div class="container-fluid">
             <img src="img/PhotoZoo/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top" >
-            <h3>Zooverse</h3>
         </div>
         <div>
           <ul class="menu">

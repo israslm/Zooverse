@@ -11,19 +11,19 @@
         <?php 
           $h = date("H");
           if($h>5 && $h<=12){
-            echo ' <img src="img/PhotoZoo/zebre.jpg" alt="zebra" width="100em" /> ';
+            echo ' <img src="img/navigationBar/zebre.jpg" alt="zebra" width="100em" /> ';
           }
           if($h>12 && $h<=21){
-            echo ' <img src="img/PhotoZoo/giraffe.jpg" alt="giraffe" width="100em" /> ';
+            echo ' <img src="img/navigationBar/giraffe.jpg" alt="giraffe" width="100em" /> ';
           }
           else{
-            echo ' <img src="img/PhotoZoo/panda.jpg" alt="panda" width="100em" /> ';
+            echo ' <img src="img/navigationBar/panda.jpg" alt="panda" width="100em" /> ';
           }
         ?>
       </div>
       <nav class="navagation-bar">
         <div class="container-fluid">
-          <img src="img/PhotoZoo/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top" >
+          <img src="img/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top" >
         </div>
         <div>
           <ul class="menu">
@@ -51,7 +51,7 @@
       <div class="row">
         <div class="column">
           <div class="content">
-            <img src="img\PhotoZoo\Sections\alligator.jpg" alt="alligator" width="100%">
+            <img src="img\sections\alligator.jpg" alt="alligator" width="100%">
             <h3>Australia's scariest animal</h3>
             <p>
               Don't miss all of the jaw-snapping alligators action here at Zooverse. 
@@ -66,7 +66,7 @@
         </div>
         <div class="column">
           <div class="content">
-            <img src="img\PhotoZoo\Sections\koala.jpg" alt="koala" width="100%">
+            <img src="img\sections\koala.jpg" alt="koala" width="100%">
             <h3>Australia's most famous animal</h3>
             <p>
               Get ready for a cuteness overload here at Australia Zoo! 
@@ -81,7 +81,7 @@
         </div>
         <div class="column">
           <div class="content">
-            <img src="img\PhotoZoo\Sections\birds.jpg" alt="birds" width="100%">
+            <img src="img\sections\birds.jpg" alt="birds" width="100%">
             <h3>Fly with birds</h3>
             <p>
               .....
@@ -95,7 +95,7 @@
         </div>
         <div class="column">
           <div class="content">
-            <img src="img\PhotoZoo\Sections\devil.jpg" alt="devil" width="100%">
+            <img src="img\sections\devil.jpg" alt="devil" width="100%">
             <h3>Cartoons' animals</h3>
             <p>
               .....

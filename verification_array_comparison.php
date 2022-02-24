@@ -12,15 +12,16 @@ if (isset($_POST["email"])) {
     echo "<br/>";
 }
 
+$utilisateurs =["Lina@gmail.com","passeLina","Edgar@gmail.com","passeEdgar"];
+
 $i = 0;
 
 $valid_input = new class{};
 $valid_input->log=[['email'=>$_POST["email"],'password'=>$_POST["password"],'date'=>date("Y-m-d H:i:s")]];
- 
-$login_users = json_decode(file_get_contents('log/login_users.json'),true);
-while ($i<=count($login_users["users"])-1){
-    if ($login_users["users"][$i]["email"]==$_POST["email"] && $login_users["users"][$i]["password"]==$_POST["password"]) {
-        $_SESSION["login"]=$login_users["users"][$i]["email"];
+
+while ($i<=sizeof($utilisateurs)-2){
+    if ($utilisateurs[$i]==$_POST["email"] && $utilisateurs[$i+1]==$_POST["password"]) {
+        $_SESSION["login"]=$utilisateurs[$i];
         $b = json_decode(file_get_contents('log/login_successful.json'),true);
         if ($b == null) {
             file_put_contents('log/login_successful.json',json_encode($valid_input,JSON_PRETTY_PRINT));
@@ -29,11 +30,13 @@ while ($i<=count($login_users["users"])-1){
             $b["log"][count($b["log"])] = ['email'=>$_POST["email"],'password'=>$_POST["password"],'date'=>date("Y-m-d H:i:s")];
             file_put_contents('log/login_successful.json',json_encode($b,JSON_PRETTY_PRINT));
         }
+        
+
         echo "connecté : ";
         echo $_SESSION["login"];
         break;
     }
-    $i=$i+1;
+    $i=$i+2;
 }   
 
 

@@ -12,73 +12,75 @@
             <!-- Menu -->
         </header>
         <div class="container">
-            <table class="table table-borderless">
-                <tbody>
-                    <th>
-                        Describe the incident or request
-                    </th>
-                    <tr>
-                        <td>Status</td>
-                        <td>
-                            <select class="form-select form-select-sm">
-                                <option value="1">New</option>
-                                <option value="2">Ongoing</option>
-                                <option value="3">Finished</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Urgency</td>
-                        <td>
-                            <select class="form-select form-select-sm">
-                                <option value="3">Medium</option>
-                                <option value="5">Very high</option>
-                                <option value="4">High</option>
-                                <option value="2">Low</option>
-                                <option value="1">Very low</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Zoo sector</td>
-                        <td>
-                            <select class="form-select form-select-sm">
-                                <option selected>Choose a sector</option>
-                                <option value="1">Alligators</option>
-                                <option value="2">Koalas</option>
-                                <option value="3">Birds</option>
-                                <option value="4">Tasmanian devils</option>
-                                <option value="5">Other</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Subject</td>
-                        <td>
-                            <div class="input-group input-group-sm">
-                                <input type="text" class="form-control" placeholder="Enter a relevant subject">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Description</td>
-                        <td>
-                            <div class="form-group">
-                                <textarea class="form-control form-control-sm" placeholder="Describe the issue" rows="3"></textarea>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Claimer</td>
-                        <td>
-                            <div class="input-group input-group-sm">
-                                <input type="text" class="form-control" placeholder="Enter your username">
-                                <button button type="submit" class="btn btn-primary ">Submit</button>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <form method="POST" action="recupTicket.php">
+                <table class="table table-borderless">
+                    <tbody>
+                        <th>
+                            Describe the incident or request
+                        </th>
+                        <tr>
+                            <td>Status</td>
+                            <td>
+                                <select name="statut" class="form-select form-select-sm">
+                                    <option>New</option>
+                                    <option>Ongoing</option>
+                                    <option>Finished</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Urgency</td>
+                            <td>
+                                <select name="prio" class="form-select form-select-sm">
+                                    <option>Medium</option>
+                                    <option>Very high</option>
+                                    <option>High</option>
+                                    <option>Low</option>
+                                    <option>Very low</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Zoo sector</td>
+                            <td>
+                                <select name="secteur" class="form-select form-select-sm">
+                                    <option selected>Choose a sector</option>
+                                    <option>Alligators</option>
+                                    <option>Koalas</option>
+                                    <option>Birds</option>
+                                    <option>Tasmanian devils</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Subject</td>
+                            <td>
+                                <div class="input-group input-group-sm">
+                                    <input name="sujet" type="text" class="form-control" placeholder="Enter a relevant subject">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>
+                                <div class="form-group">
+                                    <textarea name="description" class="form-control form-control-sm" placeholder="Describe the issue" rows="3"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Claimer</td>
+                            <td>
+                                <div class="input-group input-group-sm">
+                                    <input name="login" type="text" class="form-control" placeholder="Enter your username">
+                                    <button button type="submit" class="btn btn-primary ">Submit</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>

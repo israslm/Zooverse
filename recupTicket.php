@@ -1,0 +1,12 @@
+<?php session_start();
+echo $_POST["statut"];
+echo "<br/>";
+echo $_POST["prio"];
+echo "<br/>";
+echo $_POST["login"];
+echo "<br/>";
+echo $_POST["sujet"];
+echo "<br/>";
+echo $_POST["description"];
+echo "<br/>";
+echo $_POST["secteur"];

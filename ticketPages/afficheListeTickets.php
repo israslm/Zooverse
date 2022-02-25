@@ -15,9 +15,13 @@ $sql = "SELECT id FROM ticket";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-
-} else {
-  echo "0 results";
-}
-$conn->close();
-?>
+  
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      echo "id: " . $row["id"];
+    }
+  } else {
+    echo "0 results";
+  }
+  $conn->close();
+  ?>

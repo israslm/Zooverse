@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Zoo ticket</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="../css/formTicket.css" rel="stylesheet" type="text/css">
+        <link href="../css/newTicket.css" rel="stylesheet" type="text/css">
     </head>
     
     <body>
@@ -24,7 +24,7 @@
                     <ul class="menu">
                         <li><a href="../index.php">index</a></li>
                         <li><a href="../loginPages/authentification.html">authentification</a></li>
-                        <li><a href="formTicket.php">formTicket</a></li>
+                        <li><a href="newTicket.php">newTicket</a></li>
                     </ul>
                 </div>
             </nav>

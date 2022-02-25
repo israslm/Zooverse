@@ -28,7 +28,7 @@
                         <li><a href="loginPages/logout.php">logout</a></li>
                         <li><a href="index.php">index</a></li>
                         <li><a href="loginPages/authentification.html">authentification</a></li>
-                        <li><a href="ticketPages/formTicket.php">formTicket</a></li>
+                        <li><a href="ticketPages/newTicket.php">newTicket</a></li>
                         <li><a href="ticketPages/afficheListeTickets.php">afficheListeTickets</a></li>
                     </ul>
                 </div>

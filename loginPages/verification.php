@@ -60,7 +60,7 @@
                     <ul class="menu">
                         <li><a href="../index.php">index</a></li>
                         <li><a href="authentification.html">authentification</a></li>
-                        <li><a href="ticketPages/formTicket.php">formTicket</a></li>
+                        <li><a href="ticketPages/newTicket.php">newTicket</a></li>
                     </ul>
                 </div>
             </nav>

@@ -11,7 +11,16 @@
             <!-- Menu -->
         </header>
         <div class="container">
-            
+            <form action="" method="POST">
+                <div class="input-group">
+                    <input name="search_ticket_id" type="text" class="form-control" placeholder="Enter ticket's id">
+                    <button class="btn btn-outline-primary" type="button">Search</button>
+                </div>
+            </form>
+            <?php 
+                session_start();
+                $search_ticket_id =  $_POST["search_ticket_id"];
+                echo $search_ticket_id; ?>
         </div>
     </body>
 </html>

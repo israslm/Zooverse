@@ -19,6 +19,11 @@
             "email": "Lina@gmail.com",
             "password": "passeLina",
             "date": "2022-02-25 10:01:20"
+        },
+        {
+            "email": "Lina@gmail.com",
+            "password": "passeLina",
+            "date": "2022-02-25 10:10:45"
         }
     ]
 }

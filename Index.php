@@ -9,14 +9,14 @@
     <header>
       <div class="top-image">
         <?php 
-          $h = date("H");
+          $h = date('h')  ;
           if($h>5 && $h<=12){
             echo ' <img src="img/navigationBar/zebre.jpg" alt="zebra" width="100em" /> ';
           }
-          if($h>12 && $h<=21){
+          elseif($h>12 && $h<=21){
             echo ' <img src="img/navigationBar/giraffe.jpg" alt="giraffe" width="100em" /> ';
           }
-          else{
+          else {
             echo ' <img src="img/navigationBar/panda.jpg" alt="panda" width="100em" /> ';
           }
         ?>

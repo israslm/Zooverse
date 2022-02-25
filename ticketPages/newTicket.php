@@ -39,7 +39,7 @@
                         <tr>
                             <td>Status</td>
                             <td>
-                                <select name="statut" class="form-select form-select-sm">
+                                <select name="status" class="form-select form-select-sm">
                                     <option>New</option>
                                     <option>Ongoing</option>
                                     <option>Finished</option>
@@ -49,7 +49,7 @@
                         <tr>
                             <td>Proprity</td>
                             <td>
-                                <select name="prio" class="form-select form-select-sm">
+                                <select name="priority" class="form-select form-select-sm">
                                     <option>Medium</option>
                                     <option>Very high</option>
                                     <option>High</option>
@@ -59,9 +59,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Zoo sector</td>
+                            <td>Sector</td>
                             <td>
-                                <select name="secteur" class="form-select form-select-sm">
+                                <select name="sector" class="form-select form-select-sm">
                                     <option selected>Choose a sector</option>
                                     <option>Alligators</option>
                                     <option>Koalas</option>
@@ -75,7 +75,7 @@
                             <td>Subject</td>
                             <td>
                                 <div class="input-group input-group-sm">
-                                    <input name="sujet" type="text" class="form-control" placeholder="Enter a relevant subject">
+                                    <input name="subject" type="text" class="form-control" placeholder="Enter a relevant subject">
                                 </div>
                             </td>
                         </tr>
@@ -88,10 +88,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Claimer</td>
+                            <td>Login</td>
                             <td>
                                 <div class="input-group input-group-sm">
-                                     
                                     <input name="login" type="text" readonly class="form-control" value="<?php echo $_SESSION["login"]?>">
                                     <button button type="submit" class="btn btn-primary ">Submit</button>
                                 </div>

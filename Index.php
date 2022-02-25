@@ -29,7 +29,7 @@
                         <li><a href="index.php">index</a></li>
                         <li><a href="loginPages/authentification.html">authentification</a></li>
                         <li><a href="ticketPages/newTicket.php">newTicket</a></li>
-                        <li><a href="ticketPages/afficheListeTickets.php">afficheListeTickets</a></li>
+                        <li><a href="ticketPages/showTickets.php">showTickets</a></li>
                     </ul>
                 </div>
             </nav>

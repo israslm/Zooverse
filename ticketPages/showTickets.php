@@ -40,11 +40,11 @@
                                 <td><?php echo $row["id"]; ?></td>
                                 <td><?php echo $row["datet"]; ?></td>
                                 <td><?php echo $row["login"]; ?></td>
-                                <td><?php echo $row["sujet"]; ?></td>
+                                <td><?php echo $row["subject"]; ?></td>
                                 <td><?php echo $row["description"]; ?></td>
-                                <td><?php echo $row["prio"]; ?></td>
-                                <td><?php echo $row["secteur"]; ?></td>
-                                <td><?php echo $row["statut"]; ?></td>
+                                <td><?php echo $row["priority"]; ?></td>
+                                <td><?php echo $row["sector"]; ?></td>
+                                <td><?php echo $row["status"]; ?></td>
                             </tr>
                             <?php } ?>
                         </tbody>

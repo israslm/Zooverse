@@ -30,7 +30,7 @@
             </nav>
         </header>
         <div class="container">
-            <form method="POST" action="recupTicket.php">
+            <form method="POST" action="saveTicket.php">
                 <table class="table table-borderless">
                     <tbody>
                         <th>

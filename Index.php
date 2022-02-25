@@ -21,6 +21,18 @@
           }
         ?>
       </div>
+      <!-- Menu -->
+      <nav class="navagation-bar">
+                <div>
+                    <ul class="menu">
+                        <li><a href="loginPages/logout.php">logout</a></li>
+                        <li><a href="index.php">index</a></li>
+                        <li><a href="loginPages/authentification.html">authentification</a></li>
+                        <li><a href="ticketPages/formTicket.php">formTicket</a></li>
+                    </ul>
+                </div>
+            </nav>
+      <!--
       <nav class="navagation-bar">
         <div class="container-fluid">
           <img src="img/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top" >
@@ -34,7 +46,8 @@
             <li><a href="http://localhost/wordpress/goodies/">Goodies</a></li>
           </ul>
         </div>
-      </nav>
+      </nav> 
+      -->
     </header>
     <section>
       <div class="intro">

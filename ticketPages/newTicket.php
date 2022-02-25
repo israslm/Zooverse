@@ -11,7 +11,7 @@
             session_start();
             if ($_SESSION == null) {
                 echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
-                header("Refresh:1; ../loginPages/authentification.html");
+                header("Refresh:1; ../loginPages/login.html");
             die();
             }
         ?>
@@ -21,7 +21,7 @@
                 <div>
                     <ul class="menu">
                         <li><a href="../index.php">index</a></li>
-                        <li><a href="../loginPages/authentification.html">authentification</a></li>
+                        <li><a href="../loginPages/login.html">login</a></li>
                         <li><a href="newTicket.php">newTicket</a></li>
                     </ul>
                 </div>

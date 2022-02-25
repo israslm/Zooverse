@@ -25,9 +25,9 @@
             <nav class="navagation-bar">
                 <div>
                     <ul class="menu">
-                        <li><a href="loginPages/logout.php">logout</a></li>
+                        <li><a href="loginPages/logout.php">Logout</a></li>
                         <li><a href="index.php">index</a></li>
-                        <li><a href="loginPages/authentification.html">authentification</a></li>
+                        <li><a href="loginPages/login.html">Login</a></li>
                         <li><a href="ticketPages/newTicket.php">newTicket</a></li>
                         <li><a href="ticketPages/showTickets.php">showTickets</a></li>
                     </ul>

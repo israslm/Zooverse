@@ -14,7 +14,7 @@
                 /*                  log/login_attempts.log */
 
                 // get email and password from authentification.html
-                $authentification_input_log = [$_POST["email"],$_POST["password"],date("Y-m-d H:i:s")];
+                $authentification_input_log = [$_POST["email"],$_POST["password"],gmdate("Y-m-d H:i:s")];
                 // write $authentification_input_log in log/login_attempts.log
                 file_put_contents('../log/login_attempts.log',json_encode($authentification_input_log)."\n",FILE_APPEND);
 
@@ -23,7 +23,7 @@
 
                 // log/login_successful.json structure definition
                 $authentification_input_json = new class{};
-                $authentification_input_json->log=[['email'=>$_POST["email"],'password'=>$_POST["password"],'date'=>date("Y-m-d H:i:s")]]; 
+                $authentification_input_json->log=[['email'=>$_POST["email"],'password'=>$_POST["password"],'date'=>gmdate("Y-m-d H:i:s")]]; 
                 // log/login_users.json -> php table
                 $login_users = json_decode(file_get_contents('../log/login_users.json'),true);
                 // Vars
@@ -44,7 +44,7 @@
                         }
                         else {
                             // write $authentification_input_json in $login_successful (php table) using json suntax
-                            $login_successful["log"][count($login_successful["log"])] = ['email'=>$_POST["email"],'password'=>$_POST["password"],'date'=>date("Y-m-d H:i:s")];
+                            $login_successful["log"][count($login_successful["log"])] = ['email'=>$_POST["email"],'password'=>$_POST["password"],'date'=>gmdate("Y-m-d H:i:s")];
                             // write $login_successful (php table) -> log/login_successful.json
                             file_put_contents('../log/login_successful.json',json_encode($login_successful,JSON_PRETTY_PRINT));
                         }

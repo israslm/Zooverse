@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Zooverse</title>
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-  </head>
+    <head>
+      <meta charset="utf-8">
+      <title>Zooverse</title>
+      <link href="css/index.css" rel="stylesheet" type="text/css">
+    </head>
   <body>
     <header>
       <div class="top-image">
         <?php 
-          $h = date('h')  ;
+          $h = gmdate('H');
           if($h>5 && $h<=12){
             echo ' <img src="img/navigationBar/zebre.jpg" alt="zebra" width="100em" /> ';
           }
@@ -29,6 +29,7 @@
                         <li><a href="index.php">index</a></li>
                         <li><a href="loginPages/authentification.html">authentification</a></li>
                         <li><a href="ticketPages/formTicket.php">formTicket</a></li>
+                        <li><a href="ticketPages/afficheListeTickets.php">afficheListeTickets</a></li>
                     </ul>
                 </div>
             </nav>

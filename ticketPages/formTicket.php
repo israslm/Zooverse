@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +15,8 @@
                 echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
                 header("Refresh:1; ../loginPages/authentification.html");
             die();
-        }?>
+            }
+        ?>
         <header>
             <!-- Menu -->
             <nav class="navagation-bar">
@@ -47,7 +47,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Urgency</td>
+                            <td>Proprity</td>
                             <td>
                                 <select name="prio" class="form-select form-select-sm">
                                     <option>Medium</option>

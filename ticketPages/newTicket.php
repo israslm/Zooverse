@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>New ticket</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="../css/global.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -27,7 +28,7 @@
                         ?>
                     </a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="../index.php">index</a>
                             </li>
@@ -58,7 +59,12 @@
             if ($_SESSION == null) {
                 echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
                 header("Refresh:1; ../loginPages/login.php");
-            die();
+                die();
+            }
+            elseif ($_SESSION["login"] == null) {
+                echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
+                header("Refresh:1; ../loginPages/login.php");
+                die();
             }
         ?>
         <div class="container">

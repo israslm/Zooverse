@@ -1,0 +1,84 @@
+.container-fluid {
+  text-align: left;
+}
+
+.menu {
+  padding: 0%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  list-style-type: none;
+  flex-basis: 120px;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.menu li:hover {
+  background-color: #668c4a ;
+}
+
+.menu a.active {
+  background-color: #f2f0d5;
+}
+
+.intro {
+    text-align: center;
+}
+
+.plus {
+  text-align: left;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color:  #f2f0d5;
+  padding: 10px;
+  text-align: center;
+}
+
+.content:hover{
+  transform: scale(1.1);
+}
+

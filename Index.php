@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Zooverse</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="css/index.css" rel="stylesheet">
+        <link href="css/indexStyle.css" rel="stylesheet">
+        <link href="css/global.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -27,8 +28,8 @@
                             }
                         ?>
                     </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.php">index</a>
                             </li>
@@ -50,7 +51,23 @@
                                 <a class="nav-link" href="loginPages/logout.php">logout</a>
                             </li>
                         </ul>
+                        <div class="collapse navbar-collapse justify-content-end">
+                            <?php
+                                session_start();
+                                if ($_SESSION == null) {
+                                    echo 'Not logged in';
+                                }
+                                elseif ($_SESSION["login"] == null) {
+                                    echo 'Not logged in';
+                                }
+                                else {
+                                    echo "Logged as ".strtok($_SESSION["login"],'@');
+                                }
+                            ?>
+                        </div>
                     </div>
+                    
+
                 </div>
             </nav>
             <!--
@@ -70,7 +87,7 @@
             </nav> 
             -->
         </header>
-        <section>
+        <div class="container">
             <div class="intro">
                 <h1>Welcome to Zooverse!</h1>
                 <p>
@@ -140,7 +157,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

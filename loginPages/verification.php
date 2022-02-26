@@ -92,17 +92,7 @@
                         <div class="collapse navbar-collapse justify-content-end">
                             <ul class="navbar-nav">
                                 <?php
-                                    if ($_SESSION == null) {
-                                        echo '
-                                            <span class="navbar-text">
-                                                Not logged in
-                                            </span>';
-                                        echo '
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="login.php">login</a>
-                                            </li>';
-                                    }
-                                    elseif ($_SESSION["login"] == null) {
+                                    if (!isset($_SESSION["login"])) {
                                         echo '
                                             <span class="navbar-text">
                                                 Not logged in

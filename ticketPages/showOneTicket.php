@@ -47,17 +47,7 @@
                             <ul class="navbar-nav">
                                 <?php
                                     session_start();
-                                    if ($_SESSION == null) {
-                                        echo '
-                                            <span class="navbar-text">
-                                                Not logged in
-                                            </span>';
-                                        echo '
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="../loginPages/login.php">login</a>
-                                            </li>';
-                                    }
-                                    elseif ($_SESSION["login"] == null) {
+                                    if (!isset($_SESSION["login"])) {
                                         echo '
                                             <span class="navbar-text">
                                                 Not logged in
@@ -94,6 +84,7 @@
             <?php 
                 if ($_SERVER['REQUEST_METHOD']=='POST') {
                     $search_ticket_id = $_POST["search_ticket_id"];
+                    $_SESSION['search_ticket_id'] = $search_ticket_id;
                     include_once 'connectSQL.php';
                     $sql = "SELECT * FROM ticket WHERE id='$search_ticket_id'";
                     $result = mysqli_query($conn,$sql);
@@ -127,7 +118,11 @@
                                     </tr><?php 
                                 }?>
                             </tbody>
-                        </table><?php
+                        </table>
+                        <a href="modifyTicket.php">
+                            <button class="btn btn-outline-primary" type="submit">Modify</button>
+                        </a>
+                        <?php
                     } else {
                         echo "No ticket found";
                     }

@@ -8,6 +8,7 @@
         <link href="../css/global.css" rel="stylesheet">
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <header>
             <!-- Menu -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,27 +44,55 @@
                                     <li><a class="dropdown-item" href="showTickets.php">showTickets</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../loginPages/login.php">login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../loginPages/logout">logout</a>
-                            </li>
                         </ul>
+                        <div class="collapse navbar-collapse justify-content-end">
+                            <ul class="navbar-nav">
+                                <?php
+                                    session_start();
+                                    if ($_SESSION == null) {
+                                        echo '
+                                            <span class="navbar-text">
+                                                Not logged in
+                                            </span>';
+                                        echo '
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../loginPages/login.php">login</a>
+                                            </li>';
+                                    }
+                                    elseif ($_SESSION["login"] == null) {
+                                        echo '
+                                            <span class="navbar-text">
+                                                Not logged in
+                                            </span>';
+                                        echo '
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../loginPages/login.php">login</a>
+                                            </li>';
+                                    }
+                                    else {
+                                        echo '
+                                            <span class="navbar-text">
+                                                Logged as '.strtok($_SESSION["login"],'@').'
+                                            </span>';
+                                        echo '
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../loginPages/logout">logout</a>
+                                            </li>';
+                                    }
+                                ?>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
         <?php
-            session_start();
             if ($_SESSION == null) {
                 echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
-                header("Refresh:1; ../loginPages/login.php");
                 die();
             }
             elseif ($_SESSION["login"] == null) {
                 echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
-                header("Refresh:1; ../loginPages/login.php");
                 die();
             }
         ?>
@@ -138,7 +167,6 @@
                 </table>
             </form>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
 

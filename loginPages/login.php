@@ -43,26 +43,43 @@
                                     <li><a class="dropdown-item" href="../ticketPages/showTickets.php">showTickets</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="login.php">login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="logout.php">logout</a>
-                            </li>
                         </ul>
                         <div class="collapse navbar-collapse justify-content-end">
-                            <?php
-                                session_start();
-                                if ($_SESSION == null) {
-                                    echo 'Not logged in';
-                                }
-                                elseif ($_SESSION["login"] == null) {
-                                    echo 'Not logged in';
-                                }
-                                else {
-                                    echo "Logged as ".strtok($_SESSION["login"],'@');
-                                }
-                            ?>
+                            <ul class="navbar-nav">
+                                <?php
+                                    session_start();
+                                    if ($_SESSION == null) {
+                                        echo '
+                                            <span class="navbar-text">
+                                                Not logged in
+                                            </span>';
+                                        echo '
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.php">login</a>
+                                            </li>';
+                                    }
+                                    elseif ($_SESSION["login"] == null) {
+                                        echo '
+                                            <span class="navbar-text">
+                                                Not logged in
+                                            </span>';
+                                        echo '
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="login.php">login</a>
+                                            </li>';
+                                    }
+                                    else {
+                                        echo '
+                                            <span class="navbar-text">
+                                                Logged as '.strtok($_SESSION["login"],'@').'
+                                            </span>';
+                                        echo '
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="logout">logout</a>
+                                            </li>';
+                                    }
+                                ?>
+                            </ul>
                         </div>
                     </div>
                 </div>

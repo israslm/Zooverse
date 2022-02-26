@@ -1,234 +1,54 @@
 {
     "log": [
         {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 08:43:53"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 09:57:19"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 09:59:34"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 10:01:20"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 10:10:45"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:12:07"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:15:25"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:15:44"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:15:51"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:18:16"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:45:53"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:48:43"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:51:57"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:52:14"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:52:59"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:56:51"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 11:57:44"
+            "email": "Edgar@gmail.com",
+            "password": "passeEdgar",
+            "date": "2022-02-26 10:04:11"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-25 12:12:41"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 12:12:48"
-        },
-        {
-            "email": "Lina@gmail.com",
-            "password": "passeLina",
-            "date": "2022-02-25 12:33:36"
+            "date": "2022-02-26 10:07:39"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:05:27"
+            "date": "2022-02-26 10:18:33"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:06:56"
+            "date": "2022-02-26 10:22:15"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:07:33"
+            "date": "2022-02-26 10:23:29"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:15:49"
+            "date": "2022-02-26 10:23:47"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:16:41"
+            "date": "2022-02-26 10:24:19"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:17:07"
+            "date": "2022-02-26 10:24:29"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:17:17"
+            "date": "2022-02-26 10:25:06"
         },
         {
             "email": "Edgar@gmail.com",
             "password": "passeEdgar",
-            "date": "2022-02-26 00:17:28"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 00:17:36"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 00:40:59"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 00:42:49"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 00:43:07"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 01:26:13"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 01:40:40"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 01:52:17"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 01:52:44"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 01:53:15"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 01:58:58"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:02:30"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:02:48"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:03:05"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:03:38"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:07:59"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:11:24"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:11:32"
-        },
-        {
-            "email": "Edgar@gmail.com",
-            "password": "passeEdgar",
-            "date": "2022-02-26 02:12:27"
+            "date": "2022-02-26 10:26:56"
         }
     ]
 }

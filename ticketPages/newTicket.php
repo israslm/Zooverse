@@ -55,7 +55,7 @@
         </header>
         <?php
             session_start();
-            if ($_SESSION["login"] == null) {
+            if ($_SESSION == null) {
                 echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
                 header("Refresh:1; ../loginPages/login.php");
             die();

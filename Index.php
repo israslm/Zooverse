@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Zooverse</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -86,8 +86,8 @@
                         <img src="img\sections\alligator.jpg" alt="alligator" width="100%">
                         <h3>Australia's scariest animal</h3>
                         <p>
-                        Don't miss all of the jaw-snapping alligators action here at Zooverse. 
-                        Our amazing alligators can be spotted soaking up the Sun's rays and meeting our guests. 
+                            Don't miss all of the jaw-snapping alligators action here at Zooverse. 
+                            Our amazing alligators can be spotted soaking up the Sun's rays and meeting our guests. 
                         </p>
                         <ul class="plus">
                             <li><strong>Surface area:</strong> 1 hectare </li>

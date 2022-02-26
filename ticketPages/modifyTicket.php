@@ -10,10 +10,10 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
+                        <img src="../img/logo1.png" alt="logo" width="100em" height="100em">
                         <?php 
                             $h = gmdate('H');
                             if($h>5 && $h<=12){

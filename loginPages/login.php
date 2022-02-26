@@ -10,10 +10,10 @@
     <body>
         <header>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
+                        <img src="../img/logo1.png" alt="logo" width="100em" height="100em">
                         <?php 
                             $h = gmdate('H');
                             if($h>5 && $h<=12){

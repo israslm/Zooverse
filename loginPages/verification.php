@@ -12,7 +12,7 @@
                 session_start();
                 /*                  log/login_attempts.log */
 
-                // get email and password from login.html
+                // get email and password from login.php
                 $login_input_log = [$_POST["email"],$_POST["password"],gmdate("Y-m-d H:i:s")];
                 // write $login_input_log in log/login_attempts.log
                 file_put_contents('../log/login_attempts.log',json_encode($login_input_log)."\n",FILE_APPEND);
@@ -54,13 +54,47 @@
         ?>
         <header>
             <!-- Menu -->
-            <nav class="navagation-bar">
-                <div>
-                    <ul class="menu">
-                        <li><a href="../index.php">index</a></li>
-                        <li><a href="login.html">login</a></li>
-                        <li><a href="ticketPages/newTicket.php">newTicket</a></li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
+                        <?php 
+                            $h = gmdate('H');
+                            if($h>5 && $h<=12){
+                                echo ' <img src="../img/navigationBar/zebre.jpg" alt="zebra" width="100em" height="100em" /> ';
+                            }
+                            elseif($h>12 && $h<=21){
+                                echo ' <img src="../img/navigationBar/giraffe.jpg" alt="giraffe" width="100em" height="100em" /> ';
+                            }
+                            else {
+                                echo ' <img src="../img/navigationBar/panda.jpg" alt="panda" width="100em" height="100em" /> ';
+                            }
+                        ?>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.php">index</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tickets
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="../ticketPages/newTicket.php">newTicket</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="../ticketPages/showOneTicket.php">showOneTicket</a></li>
+                                    <li><a class="dropdown-item" href="../ticketPages/showTickets.php">showTickets</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="login.php">login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="logout.php">logout</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -73,7 +107,7 @@
                     <?php 
                         if ($_SESSION["login"] == null) {
                             echo
-                            '<form action="login.html">
+                            '<form action="login.php">
                                 <div class="alert alert-danger" role="alert">
                                     Wrong email and/or password!
                                 </div>
@@ -98,5 +132,6 @@
                 </div>
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -10,7 +10,7 @@
     <body>
         <!-- Background operations -->
         <?php 
-            include_once 'connectSQL.php';
+            include_once 'common/connectSQL.php';
             session_start();
             $sql ="UPDATE ticket SET status='".$_POST["new_status"]."' WHERE id=".$_SESSION['search_ticket_id'];
         ?>

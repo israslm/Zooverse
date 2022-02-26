@@ -1,5 +1,5 @@
 <?php
-    include_once 'connectSQL.php';
+    include_once 'common/connectSQL.php';
     $sql = "SELECT * FROM ticket";
     $result = mysqli_query($conn,$sql);
 ?>

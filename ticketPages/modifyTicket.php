@@ -92,8 +92,8 @@
                             <td>Status</td>
                             <td>
                                 <?php 
-                                    include_once 'connectSQL.php';
-                                    include_once 'setSelected.php';
+                                    include_once 'common/connectSQL.php';
+                                    include_once 'common/setSelected.php';
                                     $sql_get_current_ticket = "SELECT status FROM ticket WHERE id='".$_SESSION['search_ticket_id']."'";
                                     $result = mysqli_query($conn,$sql_get_current_ticket);
                                     $current_status = mysqli_fetch_row($result)[0];

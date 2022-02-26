@@ -10,7 +10,7 @@
     <body>
         <!-- Background operations -->
         <?php 
-            include_once 'connectSQL.php';
+            include_once 'common/connectSQL.php';
             $sql ="INSERT INTO ticket(login,subject,description,priority,sector,status) VALUES('".$_POST["login"]."','".$_POST["subject"]."','".$_POST["description"]."','".$_POST["priority"]."','".$_POST["sector"]."','".$_POST["status"]."')";
         ?>
         <header>

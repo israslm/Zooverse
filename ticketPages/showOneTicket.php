@@ -85,7 +85,7 @@
                 if ($_SERVER['REQUEST_METHOD']=='POST') {
                     $search_ticket_id = $_POST["search_ticket_id"];
                     $_SESSION['search_ticket_id'] = $search_ticket_id;
-                    include_once 'connectSQL.php';
+                    include_once 'common/connectSQL.php';
                     $sql = "SELECT * FROM ticket WHERE id='$search_ticket_id'";
                     $result = mysqli_query($conn,$sql);
                     if (mysqli_num_rows($result) > 0) {?>

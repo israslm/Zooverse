@@ -11,10 +11,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <header>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo1.png" alt="logo" width="100em" height="100em">
+                    <a class="navbar-brand" href="../index.php">
+                        <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
                         <?php 
                             $h = gmdate('H');
                             if($h>5 && $h<=12){
@@ -78,17 +78,34 @@
         </header>
         <?php
             if (!isset($_SESSION["login"])) {
-                echo '<div class="alert alert-warning" role="alert">Login in order to create a ticket</div>';
+                echo '
+                <div class="container">
+                    <div class="row justify-content-sm-center">
+                        <div class="col-sm-5">
+                            <div>
+                                <h1>New Ticket</h1>
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                Login in order to create a ticket
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                ';
                 die();
             }
         ?>
         <div class="container">
             <form method="POST" action="saveTicket.php">
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-5">
+                        <div>
+                            <h1>New Ticket</h1>
+                        </div>
+                    </div>
+                </div>
                 <table class="table table-borderless">
                     <tbody>
-                        <th>
-                            Describe the incident or request
-                        </th>
                         <tr>
                             <td>Status</td>
                             <td>
@@ -145,7 +162,7 @@
                             <td>
                                 <div class="input-group input-group-sm">
                                     <input name="login" type="text" readonly class="form-control" value="<?php echo $_SESSION["login"]?>">
-                                    <button button type="submit" class="btn btn-primary ">Submit</button>
+                                    <button button type="submit" class="btn btn-success">Submit</button>
                                 </div>
                             </td>
                         </tr>

@@ -3,23 +3,23 @@
     <head>
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Login</title>
+        <title>Modify a ticket</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="../css/global.css" rel="stylesheet">
     </head>
     <body>
         <!-- Background operations -->
         <?php 
-            include_once 'common/connectSQL.php';
+            include_once '../common/connectSQL.php';
             session_start();
             $sql ="UPDATE ticket SET status='".$_POST["new_status"]."' WHERE id=".$_SESSION['search_ticket_id'];
         ?>
         <header>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo1.png" alt="logo" width="100em" height="100em">
+                    <a class="navbar-brand" href="../index.php">
+                        <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
                         <?php 
                             $h = gmdate('H');
                             if($h>5 && $h<=12){
@@ -94,7 +94,7 @@
                                     New record created successfully!
                                 </div>
                                 <div>
-                                    <button class="btn btn-outline-primary" type="submit">Go to homepage</button>
+                                    <button class="btn btn-outline-success" type="submit">Go to homepage</button>
                                 </div>
                             </form>';
                             echo "";
@@ -106,7 +106,7 @@
                             echo'
                                 </div>
                                 <div>
-                                    <button class="btn btn-outline-primary" type="submit">Try again</button>
+                                    <button class="btn btn-outline-success" type="submit">Try again</button>
                                 </div>
                             </form>';
                         }

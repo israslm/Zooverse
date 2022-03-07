@@ -55,10 +55,10 @@
         ?>
         <header>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo1.png" alt="logo" width="100em" height="100em">
+                    <a class="navbar-brand" href="../index.php">
+                        <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
                         <?php 
                             $h = gmdate('H');
                             if($h>5 && $h<=12){
@@ -133,7 +133,7 @@
                                     Wrong email and/or password!
                                 </div>
                                 <div>
-                                    <button class="btn btn-outline-primary" type="submit">Try again</button>
+                                    <button class="btn btn-outline-success" type="submit">Try again</button>
                                 </div>
                             </form>'
                             ;
@@ -145,7 +145,7 @@
                                     Welcome back, '.strtok($_SESSION["login"],'@').'!
                                 </div>
                                 <div>
-                                    <button class="btn btn-outline-primary" type="submit">Go to homepage</button>
+                                    <button class="btn btn-outline-success" type="submit">Go to homepage</button>
                                 </div>
                             </form>';
                         }

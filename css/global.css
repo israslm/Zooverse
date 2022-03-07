@@ -1,3 +1,34 @@
 body {
-    background-color: #a6bf4b;
+    background-color: #F2F0D5;
+    /*
+    #668C4A
+    #a6bf4b
+    #F2F0D5
+    #F2C53D
+    #B1B1AC
+
+    #bacc78
+    */
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: #bacc78;
+}
+
+.nav-item.dropdown .dropdown-item:active {
+    background-color: #668C4A;
+}
+
+.form-control:focus {
+    border-color: #668C4A;
+    box-shadow: 0 0 0 0.2rem #a6bf4b;
+}
+
+.form-select:focus {
+    border-color: #668C4A;
+    box-shadow: 0 0 0 0.2rem #a6bf4b;
+}
+
+.container .row.justify-content-sm-center .col-sm-5 {
+    text-align: center;
 }

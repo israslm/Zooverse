@@ -5,16 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Zooverse</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="css/indexStyle.css" rel="stylesheet">
         <link href="css/global.css" rel="stylesheet">
+        <link href="css/indexStyle.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/logo1.png" alt="logo" width="100em" height="100em">
+                    <a class="navbar-brand" href="index.php">
+                        <img src="img/logo2.png" alt="logo" width="100em" height="100em">
                         <?php 
                             $h = gmdate('H');
                             if($h>5 && $h<=12){
@@ -80,7 +80,7 @@
             <!--
             <nav class="navagation-bar">
                 <div class="container-fluid">
-                    <img src="img/logo1.png" alt="" width="45" height="44" class="d-inline-block align-text-top" >
+                    <img src="img/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top" >
                 </div>
                 <div>
                 <ul class="menu">
@@ -129,7 +129,7 @@
                         Keep your eyes peeled for our Wandering Wildlife Team for your chance to get up close with our adorable koalas.
                         </p>
                         <ul class="plus">
-                            <li><strong>Surface area:</strong> 0.5 hectare </li>
+                            <li><strong>Surface area:</strong> 0.5 hectares </li>
                             <li><strong>Number of animals:</strong> 6 koalas </li>
                             <li><strong>Maximum capacity of people:</strong> 25 </li>
                         </ul>
@@ -138,28 +138,29 @@
                 <div class="column">
                     <div class="content">
                         <img src="img\sections\birds.jpg" alt="birds" width="100%">
-                        <h3>Fly with birds</h3>
+                        <h3>Fly with colorful birds<br></br></h3>
                         <p>
-                        .....
+                        This is a breathtaking walk-through area where guests are encouraged to participate in a sit-and-enjoy experience!
+                        If you're lucky, you might even catch the famous calibri!
                         </p>
                         <ul class="plus">
-                            <li><strong>Surface area:</strong> 1 hectare </li>
-                            <li><strong>Number of animals:</strong> 3 alligators </li>
-                            <li><strong>Maximum capacity of people:</strong> 40 </li>
+                            <li><strong>Surface area:</strong> 1.8 hectares </li>
+                            <li><strong>Number of animals:</strong> 90 birds </li>
+                            <li><strong>Maximum capacity of people:</strong> 70 </li>
                         </ul>
                     </div>
                 </div>
                 <div class="column">
                     <div class="content">
                         <img src="img\sections\devil.jpg" alt="devil" width="100%">
-                        <h3>Cartoons' animals</h3>
+                        <h3>Cartoon animals<br></br></h3>
                         <p>
-                        .....
+                        Come visit iconic animals from everyone's favourite cartoons : tasmanian devil, platypus and many more in the most diverse and unique area of the zoo
                         </p>
                         <ul class="plus">
-                            <li><strong>Surface area:</strong> 1 hectare </li>
-                            <li><strong>Number of animals:</strong> 3 alligators </li>
-                            <li><strong>Maximum capacity of people:</strong> 40 </li>
+                            <li><strong>Surface area:</strong> 2 hectares </li>
+                            <li><strong>Number of animals:</strong> 14 animals of 5 species </li>
+                            <li><strong>Maximum capacity of people:</strong> 100 </li>
                         </ul>
                     </div>
                 </div>

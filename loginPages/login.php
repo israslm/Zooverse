@@ -10,10 +10,10 @@
     <body>
         <header>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/logo1.png" alt="logo" width="100em" height="100em">
+                    <a class="navbar-brand" href="../index.php">
+                        <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
                         <?php 
                             $h = gmdate('H');
                             if($h>5 && $h<=12){
@@ -55,7 +55,7 @@
                                             </span>';
                                         echo '
                                             <li class="nav-item">
-                                                <a class="nav-link" href="login.php">login</a>
+                                                <a class="nav-link active" href="login.php">login</a>
                                             </li>';
                                     }
                                     else {
@@ -83,14 +83,14 @@
                     </div>
                     <div class="form-floating mb-3">
                         <input class="form-control" type="email" name="email" required autofocus>
-                        <label for="email">Enter your E-mail address</label>
+                        <label for="email">E-mail address</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input class="form-control" type="password" name="password" required>
-                        <label for="password">Enter your password</label>
+                        <label for="password">Password</label>
                     </div>
                     <div>
-                        <button class="btn btn-outline-primary" type="submit">Submit</button>
+                        <button class="btn btn-outline-success" type="submit">Submit</button>
                     </div>
                 </form>
             </div>

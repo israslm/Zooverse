@@ -73,12 +73,12 @@ h1 {
 
 /* Content */
 .content {
-  background-color:  #f2f0d5;
+  background-color: #bacc78;
   padding: 10px;
   text-align: center;
 }
 
 .content:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 

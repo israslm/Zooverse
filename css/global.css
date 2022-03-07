@@ -29,6 +29,10 @@ body {
     box-shadow: 0 0 0 0.2rem #a6bf4b;
 }
 
-.container .row.justify-content-sm-center .col-sm-5 {
+.container .row.justify-content-sm-center .col-sm-5 h1{
+    text-align: center;
+}
+
+.container .row.justify-content-sm-center .col-sm-5 .alert{
     text-align: center;
 }

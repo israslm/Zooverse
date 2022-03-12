@@ -93,7 +93,7 @@
                                     else {
                                         echo '
                                             <span class="navbar-text">
-                                                Logged as '.strtok($_SESSION["login"],'@').'
+                                                Logged in as '.strtok($_SESSION["login"],'@').'
                                             </span>';
                                         echo '
                                             <li class="nav-item">

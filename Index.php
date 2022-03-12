@@ -50,7 +50,7 @@
                                     else {
                                         echo '
                                             <span class="navbar-text">
-                                                Logged as '.strtok($_SESSION["login"],'@').'
+                                                Logged in as '.strtok($_SESSION["login"],'@').'
                                             </span>';
                                         echo '
                                             <li class="nav-item">
@@ -104,7 +104,7 @@
                 Zooverse has a team of passionate conservationists working around-the-clock to deliver animal experiences like no other. 
                 Visit us at Zooverse to see over 100 animals with all your Aussie favourites!
                 </p>
-                <h2>See our different sectiors !</h2>
+                <h2>See our different sectors !</h2>
             </div> 
             <div class="row">
                 <div class="column">

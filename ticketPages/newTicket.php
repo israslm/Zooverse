@@ -50,7 +50,7 @@
                                     else {
                                         echo '
                                             <span class="navbar-text">
-                                                Logged as '.strtok($_SESSION["login"],'@').'
+                                                Logged in as '.strtok($_SESSION["login"],'@').'
                                             </span>';
                                         echo '
                                             <li class="nav-item">
@@ -119,7 +119,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Proprity</td>
+                            <td>Priority</td>
                             <td>
                                 <select name="priority" class="form-select form-select-sm">
                                     <option>Medium</option>

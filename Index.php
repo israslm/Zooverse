@@ -75,26 +75,8 @@
                         </a>
                         </div>
                     </div>
-                    
-
                 </div>
             </nav>
-            <!--
-            <nav class="navagation-bar">
-                <div class="container-fluid">
-                    <img src="img/logo2.png" alt="" width="45" height="44" class="d-inline-block align-text-top" >
-                </div>
-                <div>
-                <ul class="menu">
-                    <li><a href="http://localhost/wordpress/">Home</a></li>
-                    <li><a href="#" class="active">Sectors</a></li>
-                    <li><a href="http://localhost/wordpress/tickets/">Tickets</a></li>
-                    <li><a href="http://localhost/wordpress/food-drinks/">Food & Drinks</a></li>
-                    <li><a href="http://localhost/wordpress/goodies/">Goodies</a></li>
-                </ul>
-                </div>
-            </nav> 
-            -->
         </header>
         <div class="container">
             <div class="intro">

@@ -15,18 +15,6 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.php">
                         <img src="img/logo2.png" alt="logo" width="100em" height="100em">
-                        <?php 
-                            $h = gmdate('H');
-                            if($h>5 && $h<=12){
-                                echo ' <img src="img/navigationBar/zebre.jpg" alt="zebra" width="100em" height="100em" /> ';
-                            }
-                            elseif($h>12 && $h<=21){
-                                echo ' <img src="img/navigationBar/giraffe.jpg" alt="giraffe" width="100em" height="100em" /> ';
-                            }
-                            else {
-                                echo ' <img src="img/navigationBar/panda.jpg" alt="panda" width="100em" height="100em" /> ';
-                            }
-                        ?>
                     </a>
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav">
@@ -71,6 +59,20 @@
                                     }
                                 ?>
                             </ul>
+                            <a class="navbar-brand" href="index.php">
+                            <?php 
+                                $h = gmdate('H');
+                                if($h>5 && $h<=12){
+                                    echo ' <img src="img/navigationBar/zebre.jpg" alt="zebra" width="100em" height="100em" /> ';
+                                }
+                                elseif($h>12 && $h<=21){
+                                    echo ' <img src="img/navigationBar/giraffe.jpg" alt="giraffe" width="100em" height="100em" /> ';
+                                }
+                                else {
+                                    echo ' <img src="img/navigationBar/panda.jpg" alt="panda" width="100em" height="100em" /> ';
+                                }
+                            ?>
+                        </a>
                         </div>
                     </div>
                     
@@ -159,7 +161,7 @@
                         </p>
                         <ul class="plus">
                             <li><strong>Surface area:</strong> 2 hectares </li>
-                            <li><strong>Number of animals:</strong> 14 animals of 5 species </li>
+                            <li><strong>Number of animals:</strong> 14 animals </li>
                             <li><strong>Maximum capacity of people:</strong> 100 </li>
                         </ul>
                     </div>

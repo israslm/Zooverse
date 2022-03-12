@@ -6,9 +6,12 @@ body {
     #F2F0D5
     #F2C53D
     #B1B1AC
-
     #bacc78
     */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar.navbar-expand-lg.navbar-light {
@@ -36,3 +39,4 @@ body {
 .container .row.justify-content-sm-center .col-sm-5 .alert{
     text-align: center;
 }
+

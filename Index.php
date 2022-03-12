@@ -26,7 +26,7 @@
                                     Tickets
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="ticketPages/newTicket.php">newTicket</a></li>
+                                    <li><a class="dropdown-item" href="ticketPages/newTicket.php">New ticket</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="ticketPages/showOneTicket.php">showOneTicket</a></li>
                                     <li><a class="dropdown-item" href="ticketPages/showTickets.php">showTickets</a></li>
@@ -59,17 +59,17 @@
                                     }
                                 ?>
                             </ul>
-                            <a class="navbar-brand" href="index.php">
+                        <a class="navbar-brand" href="index.php">
                             <?php 
                                 $h = gmdate('H');
                                 if($h>5 && $h<=12){
-                                    echo ' <img src="img/navigationBar/zebre.jpg" alt="zebra" width="100em" height="100em" /> ';
+                                    echo ' <img src="img/navigationBar/zebre.png" alt="zebra" width="100em" height="100em" /> ';
                                 }
                                 elseif($h>12 && $h<=21){
-                                    echo ' <img src="img/navigationBar/giraffe.jpg" alt="giraffe" width="100em" height="100em" /> ';
+                                    echo ' <img src="img/navigationBar/giraffe.png" alt="giraffe" width="100em" height="100em" /> ';
                                 }
                                 else {
-                                    echo ' <img src="img/navigationBar/panda.jpg" alt="panda" width="100em" height="100em" /> ';
+                                    echo ' <img src="img/navigationBar/panda.png" alt="panda" width="100em" height="100em" /> ';
                                 }
                             ?>
                         </a>

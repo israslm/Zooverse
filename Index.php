@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zooverse</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/global.css" rel="stylesheet">
     <link href="css/indexStyle.css" rel="stylesheet">
 </head>
@@ -24,7 +25,8 @@
                             <a class="nav-link active" aria-current="page" href="index.php">Sectors</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Tickets
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -84,7 +86,8 @@
             <h1>Welcome to Zooverse!</h1>
             <p>
                 Located an hour north of Sydney on New South Wales' Sunshine Coast,
-                Zooverse has a team of passionate conservationists working around-the-clock to deliver animal experiences like no other.
+                Zooverse has a team of passionate conservationists working around-the-clock to deliver animal
+                experiences like no other.
                 Visit us at Zooverse to see over 100 animals with all your Aussie favorites!
             </p>
             <h2>See our different sectors !</h2>
@@ -111,7 +114,8 @@
                     <h3>Australia's most famous animal</h3>
                     <p>
                         Get ready for a cuteness overload here at Australia Zoo!
-                        Keep your eyes peeled for our Wandering Wildlife Team for your chance to get up close with our adorable koalas.
+                        Keep your eyes peeled for our Wandering Wildlife Team for your chance to get up close with our
+                        adorable koalas.
                     </p>
                     <ul class="plus">
                         <li><strong>Surface area:</strong> 0.5 hectares </li>
@@ -125,7 +129,8 @@
                     <img src="img\sections\birds.jpg" alt="birds" width="100%">
                     <h3>Fly with colorful birds<br></br></h3>
                     <p>
-                        This is a breathtaking walk-through area where guests are encouraged to participate in a sit-and-enjoy experience!
+                        This is a breathtaking walk-through area where guests are encouraged to participate in a
+                        sit-and-enjoy experience!
                         If you're lucky, you might even catch the famous calibri!
                     </p>
                     <ul class="plus">
@@ -140,7 +145,8 @@
                     <img src="img\sections\devil.jpg" alt="devil" width="100%">
                     <h3>Cartoon animals<br></br></h3>
                     <p>
-                        Come visit iconic animals from everyone's favourite cartoons : tasmanian devil, platypus and many more in the most diverse and unique area of the zoo
+                        Come visit iconic animals from everyone's favourite cartoons : tasmanian devil, platypus and
+                        many more in the most diverse and unique area of the zoo
                     </p>
                     <ul class="plus">
                         <li><strong>Surface area:</strong> 2 hectares </li>
@@ -151,7 +157,9 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

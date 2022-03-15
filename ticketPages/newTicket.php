@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>New ticket</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../css/global.css" rel="stylesheet">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <header>
         <!-- Menu -->
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -24,7 +27,8 @@
                             <a class="nav-link" href="../index.php">Sectors</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Tickets
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -148,7 +152,8 @@
                         <td>Subject</td>
                         <td>
                             <div class="input-group input-group-sm">
-                                <input name="subject" type="text" class="form-control" placeholder="Enter a relevant subject">
+                                <input name="subject" type="text" class="form-control"
+                                    placeholder="Enter a relevant subject">
                             </div>
                         </td>
                     </tr>
@@ -156,7 +161,8 @@
                         <td>Description</td>
                         <td>
                             <div class="form-group">
-                                <textarea name="description" class="form-control form-control-sm" placeholder="Describe the issue" rows="3"></textarea>
+                                <textarea name="description" class="form-control form-control-sm"
+                                    placeholder="Describe the issue" rows="3"></textarea>
                             </div>
                         </td>
                     </tr>
@@ -164,7 +170,8 @@
                         <td>Login</td>
                         <td>
                             <div class="input-group input-group-sm">
-                                <input name="login" type="text" readonly class="form-control" value="<?php echo $_SESSION["login"] ?>">
+                                <input name="login" type="text" readonly class="form-control"
+                                    value="<?php echo $_SESSION["login"] ?>">
                                 <button button type="submit" class="btn btn-success">Submit</button>
                             </div>
                         </td>

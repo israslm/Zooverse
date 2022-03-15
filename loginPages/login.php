@@ -66,7 +66,7 @@
                         <?php
                         $h = gmdate('H');
                         if ($h > 5 && $h <= 12) {
-                            echo ' <img src="../img/navigationBar/zebre.png" alt="zebra" width="100em" height="100em" /> ';
+                            echo ' <img src="../img/navigationBar/zebra.png" alt="zebra" width="100em" height="100em" /> ';
                         } elseif ($h > 12 && $h <= 21) {
                             echo ' <img src="../img/navigationBar/giraffe.png" alt="giraffe" width="100em" height="100em" /> ';
                         } else {

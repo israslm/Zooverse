@@ -66,7 +66,7 @@
                             <?php
                             $h = gmdate('H');
                             if ($h > 5 && $h <= 12) {
-                                echo ' <img src="img/navigationBar/zebre.png" alt="zebra" width="100em" height="100em" /> ';
+                                echo ' <img src="img/navigationBar/zebra.png" alt="zebra" width="100em" height="100em" /> ';
                             } elseif ($h > 12 && $h <= 21) {
                                 echo ' <img src="img/navigationBar/giraffe.png" alt="giraffe" width="100em" height="100em" /> ';
                             } else {
@@ -85,7 +85,7 @@
             <p>
                 Located an hour north of Sydney on New South Wales' Sunshine Coast,
                 Zooverse has a team of passionate conservationists working around-the-clock to deliver animal experiences like no other.
-                Visit us at Zooverse to see over 100 animals with all your Aussie favourites!
+                Visit us at Zooverse to see over 100 animals with all your Aussie favorites!
             </p>
             <h2>See our different sectors !</h2>
         </div>

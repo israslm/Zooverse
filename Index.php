@@ -9,6 +9,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/global.css" rel="stylesheet">
     <link href="css/indexStyle.css" rel="stylesheet">
+    <script type="text/javascript" src="function.js"></script>
 </head>
 
 <body>

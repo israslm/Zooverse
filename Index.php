@@ -98,7 +98,7 @@
                 <div class="content">
                     <img src="img\sections\alligator.jpg" alt="alligator" width="100%">
                     <h3>Australia's scariest animal</h3>
-                    <p>
+                    <p align="justify">
                         Don't miss all of the jaw-snapping alligators action here at Zooverse.
                         Our amazing alligators can be spotted soaking up the Sun's rays and meeting our guests.
                     </p>
@@ -113,7 +113,7 @@
                 <div class="content">
                     <img src="img\sections\koala.jpg" alt="koala" width="100%">
                     <h3>Australia's most famous animal</h3>
-                    <p>
+                    <p align="justify">
                         Get ready for a cuteness overload here at Australia Zoo!
                         Keep your eyes peeled for our Wandering Wildlife Team for your chance to get up close with our
                         adorable koalas.
@@ -129,7 +129,7 @@
                 <div class="content">
                     <img src="img\sections\birds.jpg" alt="birds" width="100%">
                     <h3>Fly with colorful birds<br></br></h3>
-                    <p>
+                    <p align="justify">
                         This is a breathtaking walk-through area where guests are encouraged to participate in a
                         sit-and-enjoy experience!
                         If you're lucky, you might even catch the famous calibri!
@@ -145,7 +145,7 @@
                 <div class="content">
                     <img src="img\sections\devil.jpg" alt="devil" width="100%">
                     <h3>Cartoon animals<br></br></h3>
-                    <p>
+                    <p align="justify">
                         Come visit iconic animals from everyone's favourite cartoons : tasmanian devil, platypus and
                         many more in the most diverse and unique area of the zoo
                     </p>

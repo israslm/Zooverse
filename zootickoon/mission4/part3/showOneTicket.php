@@ -32,8 +32,8 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="showOneTicket.php">showOneTicket</a></li>
-                                <li><a class="dropdown-item" href="showTickets.php">showTickets</a></li>
+                                <li><a class="dropdown-item" href="showOneTicket.php">Ticket search</a></li>
+                                <li><a class="dropdown-item" href="showTickets.php">All tickets</a></li>
                             </ul>
                         </li>
                     </ul>

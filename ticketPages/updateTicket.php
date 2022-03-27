@@ -41,7 +41,7 @@
                                 </li>
                                 <li><a class="dropdown-item" href="../ticketPages/showOneTicket.php">showOneTicket</a>
                                 </li>
-                                <li><a class="dropdown-item" href="../ticketPages/showTickets.php">showTickets</a></li>
+                                <li><a class="dropdown-item" href="../ticketPages/showTickets.php">All tickets</a></li>
                             </ul>
                         </li>
                     </ul>

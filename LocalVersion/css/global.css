@@ -1,0 +1,41 @@
+body {
+  background-color: #f2f0d5;
+  /*
+  #668C4A
+  #a6bf4b
+  #F2F0D5
+  #F2C53D
+  #B1B1AC
+  #bacc78
+  */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+  background-color: #bacc78;
+}
+
+.nav-item.dropdown .dropdown-item:active {
+  background-color: #668c4a;
+}
+
+.form-control:focus {
+  border-color: #668c4a;
+  box-shadow: 0 0 0 0.2rem #a6bf4b;
+}
+
+.form-select:focus {
+  border-color: #668c4a;
+  box-shadow: 0 0 0 0.2rem #a6bf4b;
+}
+
+.container .row.justify-content-sm-center .col-sm-5 h1 {
+  text-align: center;
+}
+
+.container .row.justify-content-sm-center .col-sm-5 .alert {
+  text-align: center;
+}

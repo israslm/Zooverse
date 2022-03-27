@@ -88,7 +88,7 @@
                     <h1>Login</h1>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" type="email" name="email" required autofocus>
+                    <input class="form-control" type="text" name="email" required autofocus>
                     <label for="email">E-mail address</label>
                 </div>
                 <div class="form-floating mb-3">

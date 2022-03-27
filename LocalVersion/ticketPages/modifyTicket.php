@@ -60,7 +60,7 @@
                                             </span>';
                                 echo '
                                             <li class="nav-item">
-                                                <a class="nav-link" href="../loginPages/logout">logout</a>
+                                                <a class="nav-link" href="../loginPages/logout.php">logout</a>
                                             </li>';
                             }
                             ?>

@@ -88,7 +88,7 @@
     </header>
     <div class="container">
         <div class="row justify-content-sm-center">
-            <form method="POST" class="col-sm-5" action="verification.php">
+            <form method="POST" class="col-sm-5" action="../loginPages/verification.php">
                 <div>
                     <h1>Register</h1>
                 </div>

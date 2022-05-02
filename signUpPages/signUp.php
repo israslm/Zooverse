@@ -93,12 +93,12 @@
                     <h1>Sign Up</h1>
                 </div>
                 <div class="form-floating mb-3">
-                    <input class="form-control" type="email" name="email" required autofocus>
+                    <input id="email" class="form-control" type="email" name="email" required autofocus>
                     <label for="email">E-mail address</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                    <input class="form-control" type="password" name="password" required>
+                    <input id="password" class="form-control" type="password" name="password" required>
                     <label for="password">Password</label>
                 </div>
                 <div>
@@ -115,6 +115,10 @@
                 console.log(email);
             });
         )
+        let user= new User($( "#email" ).val(),$( "#password" ).val());
+        sessionStorage.setItem('User',user);
+
+
         </script>
 
     </div>

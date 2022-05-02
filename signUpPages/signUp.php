@@ -7,88 +7,17 @@
     <title>Sign Up</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/global.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+    <link href="//dsagdullin.alwaysdata.net/css/global.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- Menu -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.php">
-                    <img src="../img/logo2.png" alt="logo" width="100em" height="100em">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.php">Sectors</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Tickets
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="../ticketPages/newTicket.php">New ticket</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="../ticketPages/showOneTicket.php">Ticket search</a>
-                                </li>
-                                <li><a class="dropdown-item" href="../ticketPages/showTickets.php">All tickets</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registration.php">Registration</a>
-                        </li>
-                    </ul>
-                    <div class="collapse navbar-collapse justify-content-end">
-                        <ul class="navbar-nav">
-                            <?php
-                            session_start();
-                            if (!isset($_SESSION["login"])) {
-                                echo '
-                                            <span class="navbar-text">
-                                                Not logged in
-                                            </span>';
-                                echo '
-                                            <li class="nav-item">
-                                                <a class="nav-link active" href="../loginPages/login.php">login</a>
-                                            </li>';
-                            } else {
-                                echo '
-                                            <span class="navbar-text">
-                                                Logged in as ' . strtok($_SESSION["login"], '@') . '
-                                            </span>';
-                                echo '
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="logout.php">logout</a>
-                                            </li>';
-                            }
-                            ?>
-                        </ul>
-                    </div>
-                    <a class="navbar-brand" href="index.php">
-                        <?php
-                        $h = gmdate('H');
-                        if ($h > 5 && $h <= 12) {
-                            echo ' <img src="../img/navigationBar/zebra.png" alt="zebra" width="100em" height="100em" /> ';
-                        } elseif ($h > 12 && $h <= 21) {
-                            echo ' <img src="../img/navigationBar/giraffe.png" alt="giraffe" width="100em" height="100em" /> ';
-                        } else {
-                            echo ' <img src="../img/navigationBar/panda.png" alt="panda" width="100em" height="100em" /> ';
-                        }
-                        ?>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/common/navigation.php"; ?>
+
     <div class="container">
         <div class="row justify-content-sm-center">
-            <form method="POST" class="col-sm-5" action="./verificationSignUp.php">
+            <form method="POST" class="col-sm-5"
+                action="//dsagdullin.alwaysdata.net/signUpPages/verificationSignUp.php">
                 <div>
                     <h1>Sign Up</h1>
                 </div>
@@ -96,7 +25,6 @@
                     <input id="email" class="form-control" type="email" name="email" required autofocus>
                     <label for="email">E-mail address</label>
                 </div>
-
                 <div class="form-floating mb-3">
                     <input id="password" class="form-control" type="password" name="password" required>
                     <label for="password">Password</label>
@@ -104,24 +32,48 @@
                 <div>
                     <button class="btn btn-outline-success" type="submit" id="submit">Submit</button>
                 </div>
+
             </form>
+            <div>
+                <button class="btn btn-outline-success" id="submit1">Submit</button>
+            </div>
         </div>
-
-        <script>
-        
-        $(document).ready(
-            $("submit").click(function(){ 
-                var email= $( "#email" ).val();
-                console.log(email);
-            });
-        )
-        let user= new User($( "#email" ).val(),$( "#password" ).val());
-        sessionStorage.setItem('User',user);
-
-
-        </script>
-
     </div>
+
+    <script src="//dsagdullin.alwaysdata.net/common/user.js"></script>
+
+    <script>
+    $('#submit').on('click', function(e) {
+        e.preventDefault();
+        var btn = $(this),
+            theme = "green";
+
+        $.jAlert({
+            'title': 'jAlert Demo',
+            'content': 'You tried to sign up as :',
+            'theme': theme,
+            'closeOnClick': true,
+            'backgroundColor': 'white',
+            'btns': [{
+                'text': 'Continue',
+                'theme': theme
+            }]
+        });
+    });
+    </script>
+
+    <script>
+    $(document).ready($("#submit").click(function() {
+        var email = $("#email").val();
+        console.log('Simple var log : ' + email);
+
+        let user = new User($("#email").val(), $("#password").val());
+        console.log('User class email attribute log : ' + user.login);
+
+        sessionStorage.setItem('User', user);
+    }))
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

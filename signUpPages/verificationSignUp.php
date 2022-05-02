@@ -138,7 +138,8 @@
                 </div>
                 <?php
             if ($_SESSION["login"] == null) {
-                $sql_sign_up = "INSERT INTO user(login,password,datet) VALUES('" . $_POST["login"] . "','" . $_POST["password"] . "', CURRENT_TIMESTAMP)";
+                $sql_sign_up = "INSERT INTO user set login=" . $_POST["login"] . ", password=" . $_POST["password"] . ", datet = CURRENT_TIMESTAMP;";
+                mysqli_query($conn,$sql_sign_up);
                 echo
                 '<form action="login.php">
                                 <div class="alert alert-success" role="alert">

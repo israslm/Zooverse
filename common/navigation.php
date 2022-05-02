@@ -10,7 +10,7 @@
                             <a class="nav-link" href="../index.php">Sectors</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" id="navbarScrollingDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Tickets
                             </a>
@@ -30,21 +30,21 @@
                             session_start();
                             if (!isset($_SESSION["login"])) {
                                 echo '
-                                            <span class="navbar-text">
-                                                Not logged in
-                                            </span>';
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../signUpPages/signUp.php">Sign Up</a>
+                                            </li>';
                                 echo '
                                             <li class="nav-item">
-                                                <a class="nav-link" href="../loginPages/login.php">login</a>
+                                                <a class="nav-link" href="../loginPages/login.php">Login</a>
                                             </li>';
                             } else {
                                 echo '
-                                            <span class="navbar-text">
-                                                Logged in as ' . strtok($_SESSION["login"], '@') . '
+                                            <span class="navbar-text font-weight-bold">
+                                                strtok($_SESSION["login"], '@')
                                             </span>';
                                 echo '
                                             <li class="nav-item">
-                                                <a class="nav-link" href="../loginPages/logout.php">logout</a>
+                                                <a class="nav-link" href="../loginPages/logout.php">Logout</a>
                                             </li>';
                             }
                             ?>

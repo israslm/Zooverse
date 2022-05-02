@@ -88,18 +88,15 @@
     </header>
     <div class="container">
         <div class="row justify-content-sm-center">
-            <form method="POST" class="col-sm-5" action="../loginPages/verification.php">
+            <form method="POST" class="col-sm-5" action="./verificationSignUp.php">
                 <div>
-                    <h1>Register</h1>
+                    <h1>Sign Up</h1>
                 </div>
                 <div class="form-floating mb-3">
                     <input class="form-control" type="email" name="email" required autofocus>
                     <label for="email">E-mail address</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <input class="form-control" type="username" name="username" required autofocus>
-                    <label for="username">Username</label>
-                </div>
+
                 <div class="form-floating mb-3">
                     <input class="form-control" type="password" name="password" required>
                     <label for="password">Password</label>
@@ -114,8 +111,8 @@
         
         $(document).ready(
             $("submit").click(function(){ 
-                var username= $( "#username" ).val();
-                console.log(username);
+                var email= $( "#email" ).val();
+                console.log(email);
             });
         )
         </script>

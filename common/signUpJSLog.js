@@ -1,15 +1,8 @@
-class User {
-    constructor(login, password) {
-        this.login = login
-        this.password = password
-    }
-}
-
 $(document).ready(function () {
-    $('#submit_button').click(function () {
+    $('#submit').click(function () {
         let email = $('#email').val()
         let password = $('#password').val()
-        $.ajax('//dsagdullin.alwaysdata.net/loginPages/verification.php', {
+        $.ajax('//dsagdullin.alwaysdata.net/signUpPages/verificationSignUp.php', {
             type: 'GET',
             data: 'email=' + email + '&password=' + password,
             success: function (data, textStatus, jqXHR) {
@@ -19,8 +12,5 @@ $(document).ready(function () {
                 console.log(xhr.status)
             },
         })
-        let user = new User($('#email').val(), $('#password').val())
-        console.log('User class email attribute log : ' + user.login)
-        sessionStorage.setItem('User', JSON.stringify(user))
     })
 })

@@ -34,9 +34,10 @@
                                         <button class="btn btn-outline-success" type="submit">Go to homepage</button>
                                     </div>
                                 </form>';
+                    http_response_code(200);
                 } else {
                     echo
-                        '<form action="//dsagdullin.alwaysdata.net/loginPages/login.php">
+                        '<form action="//dsagdullin.alwaysdata.net">
                                     <div class="alert alert-success" role="alert">
                                         Already signed up as, ' . strtok($_SESSION["login"], '@') . '!
                                     </div>
@@ -44,6 +45,7 @@
                                         <button class="btn btn-outline-success" type="submit">Go to homepage</button>
                                     </div>
                                 </form>';
+                    http_response_code(403);
                 }
                 ?>
             </div>

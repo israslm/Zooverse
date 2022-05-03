@@ -31,6 +31,7 @@
                             <button class="btn btn-outline-success" type="submit">Try again</button>
                         </div>
                     </form>';
+                    http_response_code(403);
                 } else {
                     echo
                     '<form action="//dsagdullin.alwaysdata.net">
@@ -41,6 +42,7 @@
                             <button class="btn btn-outline-success" type="submit">Go to homepage</button>
                         </div>
                     </form>';
+                    http_response_code(200);
                 }
                 ?>
             </div>

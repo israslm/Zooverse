@@ -48,7 +48,13 @@
         let user = new User($("#email").val(), $("#password").val());
         console.log('User class email attribute log : ' + user.login);
 
-        sessionStorage.setItem('User', user);
+
+        sessionStorage.setItem('User', JSON.stringify(user));
+        var user_json = sessionStorage.getItem('User');
+        var user_object = JSON.parse(user_json);
+
+        console.log('User class email attribute from sessionStorage : ' + user_object.login);
+
         swal({
                 title: "Are you sure?",
                 text: "You try to sign in as : " + email,

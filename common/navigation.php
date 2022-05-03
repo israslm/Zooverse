@@ -26,6 +26,9 @@
                             <li><a class="dropdown-item"
                                     href="//dsagdullin.alwaysdata.net/ticketPages/showTickets.php">View all tickets</a>
                             </li>
+                            <li><a class="dropdown-item"
+                                    href="//dsagdullin.alwaysdata.net/ticketPages/manageTickets.php">Manage tickets</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>

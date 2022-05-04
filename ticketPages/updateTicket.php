@@ -23,7 +23,7 @@
         <div class="row justify-content-sm-center">
             <div class="col-sm-5">
                 <div>
-                    <h1>Modify ticket</h1>
+                    <h1>Modify ticket n°<?php echo $_SESSION['search_ticket_id']; ?></h1>
                 </div>
                 <?php
                 if (mysqli_query($conn, $sql)) {

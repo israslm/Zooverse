@@ -21,10 +21,10 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item"
-                                    href="//dsagdullin.alwaysdata.net/ticketPages/searchTicket.php">Ticket search</a>
+                                    href="//dsagdullin.alwaysdata.net/ticketPages/searchTicket.php">Search ticket</a>
                             </li>
                             <li><a class="dropdown-item"
-                                    href="//dsagdullin.alwaysdata.net/ticketPages/showTickets.php">View all tickets</a>
+                                    href="//dsagdullin.alwaysdata.net/ticketPages/allTickets.php">All tickets</a>
                             </li>
                             <li><a class="dropdown-item"
                                     href="//dsagdullin.alwaysdata.net/ticketPages/manageTickets.php">Manage tickets</a>
@@ -39,7 +39,7 @@
                         if (!isset($_SESSION["login"])) {
                             echo '
                                 <li class="nav-item">
-                                    <a class="nav-link" href="//dsagdullin.alwaysdata.net/signUpPages/signUp.php">Sign Up</a>
+                                    <a class="nav-link" href="//dsagdullin.alwaysdata.net/signupPages/signup.php">Sign Up</a>
                                 </li>';
                             echo '
                                 <li class="nav-item">
@@ -48,7 +48,7 @@
                         } else {
                             echo '
                                 <span class="navbar-text font-weight-bold">
-                                    ' . strtok($_SESSION["login"], "@") . '
+                                    Hi, ' . strtok($_SESSION["login"], "@") . '
                                 </span>';
                             echo '
                                 <li class="nav-item">

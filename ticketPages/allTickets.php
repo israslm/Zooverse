@@ -33,7 +33,7 @@
             <tbody>
                 <thead>
                     <td>Id</td>
-                    <td>Date and time</td>
+                    <td>Date</td>
                     <td>Login</td>
                     <td>Subject</td>
                     <td>Description</td>

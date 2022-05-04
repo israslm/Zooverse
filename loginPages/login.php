@@ -17,7 +17,7 @@
 
     <div class="container">
         <div class="row justify-content-sm-center">
-            <form method="POST" class="col-sm-5" action="//dsagdullin.alwaysdata.net/loginPages/verification.php">
+            <form method="POST" class="col-sm-5" action="//dsagdullin.alwaysdata.net/loginPages/verificationLogin.php">
                 <div>
                     <h1>Login</h1>
                 </div>
@@ -30,17 +30,17 @@
                     <label for="password">Password</label>
                 </div>
                 <div>
-                    <button class="btn btn-outline-success" type="submit" id="submit_button">Submit</button>
+                    <button class="btn btn-outline-success" type="submit" id="submit_login_button">Submit</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="//dsagdullin.alwaysdata.net/common/loginJSLog.js"></script>
-
+    <script src="//dsagdullin.alwaysdata.net/js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>

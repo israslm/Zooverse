@@ -36,7 +36,7 @@
         }
     ?>
     <div class="container">
-        <form method="POST" action="//dsagdullin.alwaysdata.net/ticketPages/saveTicket.php">
+        <form method="POST" action="//dsagdullin.alwaysdata.net/ticketPages/saveNewTicket.php">
             <div class="row justify-content-sm-center">
                 <div class="col-sm-5">
                     <div>

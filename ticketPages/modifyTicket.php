@@ -33,23 +33,20 @@
                 <form method="POST" action="//dsagdullin.alwaysdata.net/ticketPages/updateTicket.php">
                     <table class="table table-borderless">
                         <tbody>
-                            <tr>
-                                <td>Status</td>
-                                <td>
-                                    <?php
-                                    include $_SERVER['DOCUMENT_ROOT']."/common/connectSQL.php";
-                                    include $_SERVER['DOCUMENT_ROOT']."/common/setSelected.php";
-                                    $sql_get_current_ticket = "SELECT status FROM ticket WHERE id='" . $_SESSION['search_ticket_id'] . "'";
-                                    $result = mysqli_query($conn, $sql_get_current_ticket);
-                                    $current_status = mysqli_fetch_row($result)[0];
-                                    ?>
-                                    <select name="new_status" class="form-select form-select-sm ">
-                                        <option <?php set_selected('New', $current_status);      ?>>New </option>
-                                        <option <?php set_selected('Ongoing', $current_status);  ?>>Ongoing</option>
-                                        <option <?php set_selected('Finished', $current_status); ?>>Finished</option>
-                                    </select>
-                                </td>
-                            </tr>
+                            <?php
+                                include $_SERVER['DOCUMENT_ROOT']."/common/connectSQL.php";
+                                include $_SERVER['DOCUMENT_ROOT']."/common/setSelected.php";
+                                $sql_get_current_ticket = "SELECT status FROM ticket WHERE id='" . $_SESSION['search_ticket_id'] . "'";
+                                $result = mysqli_query($conn, $sql_get_current_ticket);
+                                $current_status = mysqli_fetch_row($result)[0];
+                            ?>
+                            <label for="new_status">New status : </label>
+                            <select id="new_status" name="new_status" class="form-select form-select-sm ">
+                                <option <?php set_selected('New', $current_status);      ?>>New </option>
+                                <option <?php set_selected('Ongoing', $current_status);  ?>>Ongoing</option>
+                                <option <?php set_selected('Finished', $current_status); ?>>Finished</option>
+                            </select>
+
                         </tbody>
                     </table>
                     <button class="btn btn-outline-success" type="submit">Modify</button>

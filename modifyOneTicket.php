@@ -91,20 +91,21 @@ include $_SERVER['DOCUMENT_ROOT']."/common/connectSQL.php";
 
     <script>
     $('#button_update_ticket').click(function() {
-        $.ajax(
-            '//dsagdullin.alwaysdata.net/updateOneticket.php', {
-                type: 'GET',
-                method: 'GET',
-                data: {
-                    "new_satuts": $('#new_satuts').val(),
-                    "id_ticket": $('#id_ticket').val(),
+        console.log($('#new_satuts').text());
+        // $.ajax(
+        //     '//dsagdullin.alwaysdata.net/updateOneticket.php', {
+        //         type: 'GET',
+        //         method: 'GET',
+        //         data: {
+        //             "new_satuts": $('#new_satuts').text(),
+        //             "id_ticket": $('#id_ticket').val(),
 
-                },
-                success: function(resultat) {
-                    $('#showTicket').html(resultat)
-                },
+        //         },
+        //         success: function(resultat) {
+        //             $('#showTicket').html(resultat)
+        //         },
 
-            }
-        )
+        //     }
+        // )
     })
     </script>

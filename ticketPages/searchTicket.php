@@ -19,7 +19,7 @@
                 <div>
                     <h1>Search a ticket</h1>
                 </div>
-                <form action="//dsagdullin.alwaysdata.net/ticketPages/showOneTicket.php" method="POST">
+                <form action="//dsagdullin.alwaysdata.net/ticketPages/searchTicket.php" method="POST">
                     <div class="input-group">
                         <input name="search_ticket_id" type="text" class="form-control" placeholder="Enter ticket's id">
                         <button class="btn btn-outline-success" type="submit">Search</button>

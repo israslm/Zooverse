@@ -21,7 +21,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item"
-                                    href="//dsagdullin.alwaysdata.net/ticketPages/showOneTicket.php">Ticket search</a>
+                                    href="//dsagdullin.alwaysdata.net/ticketPages/searchTicket.php">Ticket search</a>
                             </li>
                             <li><a class="dropdown-item"
                                     href="//dsagdullin.alwaysdata.net/ticketPages/showTickets.php">View all tickets</a>

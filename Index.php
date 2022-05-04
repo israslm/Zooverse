@@ -17,11 +17,11 @@
     <div class="container">
         <div class="intro">
             <h1>Welcome to Zooverse!</h1>
-            <p>
+            <p class="content">
                 Located an hour north of Sydney on New South Wales' Sunshine Coast,
                 Zooverse has a team of passionate conservationists working around-the-clock to deliver animal
                 experiences like no other.
-                Visit us at Zooverse to see over 100 animals with all your Aussie favorites!
+                Visit us at Zooverse to see over 100 animals with all your favorites!
             </p>
             <h2>See our different sectors !</h2>
         </div>
